@@ -10,7 +10,7 @@ import Card from './Card';
 // In map, 2nd parameter (i) is equal to index. User = each individual object in robots array.
 // When looping, React requires that each item in array being looped thru has a unique key that doesn't change. 
 // So, we'll assign id as key. Index not ideal choice for key, b/c index can change if array items moved/deleted.
-const CardList = ({ robots }) => {	
+const CardList = ({ robots }) => {	// Remember, the prop 'robots' is equal to the filteredRobots array (App passed down filteredrobots as 'robots' to CardList)
 	return (
 		<div>
 			{
