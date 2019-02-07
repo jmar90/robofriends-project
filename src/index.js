@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App'; // App will be the parent of all components
+import App from './containers/App'; 
 import * as serviceWorker from './serviceWorker';
-import 'tachyons';  // Tachyons is a styling package (like Bootstrap)
+import 'tachyons';  
 
 ReactDOM.render(<App />, document.getElementById('root')
 );
