@@ -1,4 +1,3 @@
-// ROBOTS ARRAY. These were random names/emails that instructor created //
 export const robots = [
   {
     id: 1,
