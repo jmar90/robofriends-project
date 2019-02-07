@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CardList from './CardList';
 import SearchBox from './SearchBox';
+import Scroll from './Scroll';
 import './App.css';
 	// We have to destructure robots, b/c in the robots.js file, we used export vs. export default. 'Export' is used when you are
 	// exporting > 1 variable, so consequently, if you are importing something from a file where 'export' is used, you need to 
@@ -44,7 +45,9 @@ class App extends Component {
 				<div className='tc'>	  {/* Since we can only return 1 thing, wrap h1 & CardList in div. tc = text center. */}
 					<h1 className='f1'>RoboFriends</h1>
 					<SearchBox searchChange={this.onSearchChange} />  {/* 'this' refers to App */}
-					<CardList robots={filteredRobots}/>  {/* filteredRobots is now passed down to CardList as a PROP */}
+					<Scroll>
+						<CardList robots={filteredRobots}/>  {/* filteredRobots is now passed down to CardList as a PROP */}
+					</Scroll>
 				</div>
 			);
 		}
